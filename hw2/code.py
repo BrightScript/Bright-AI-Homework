@@ -288,4 +288,10 @@ def main():
     #logistic:
     if 'logreg1' in args:
         logistic_regression(X_train,Y_train,X_test,Y_test,
-                  
+                            implement_regular=True)
+    if 'logreg2' in args:
+        logistic_regression(X_train,Y_train,X_test,Y_test,
+                            implement_newton=True)
+
+if __name__ == "__main__":
+	main()
